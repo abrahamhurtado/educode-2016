@@ -11,7 +11,7 @@ export default class HelloWorld extends React.Component {
         className={ "nav-wrapper teal darken-3" }
       >
 
-      <a href="/" className="brand-logo">Logo</a>
+      <a href="/cursos" className="brand-logo">Logo</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
 
         <li>

@@ -40,7 +40,7 @@ export default class Search extends React.Component {
           "courseInfo":"Base básica del español",
           "liked":true,
           "Category":["Español"],
-          "courseLikes":140,
+          "courseLikes":130,
           "subscribed":true,
           "private":false,
           "coursePassword":"",
@@ -54,7 +54,7 @@ export default class Search extends React.Component {
           "courseInfo":"Calculo I",
           "liked":false,
           "Category":["Matematicas"],
-          "courseLikes":140,
+          "courseLikes":180,
           "subscribed":false,
           "private":false,
           "coursePassword":"",
@@ -73,6 +73,19 @@ export default class Search extends React.Component {
           "private":true,
           "coursePassword":"Integrales_123123",
           "courseLink":"/cursos/4"
+        },{
+          "courseID":5,
+          "courseName":"Programación para ingenieros I",
+          "Percent":"0%",
+          "courseInstructor":"Saúl García",
+          "courseInfo":"Programación básica.",
+          "liked":false,
+          "Category":["Matematicas"],
+          "courseLikes":500,
+          "subscribed":false,
+          "private":false,
+          "coursePassword":"",
+          "courseLink":"/cursos/5"
         }
     ];
     return (

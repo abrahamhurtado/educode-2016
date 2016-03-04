@@ -16,7 +16,8 @@ export default class CursosList extends React.Component{
           "subscribed":true,
           "private":false,
           "coursePassword":"",
-          "courseLink":"/cursos/0"
+          "courseLink":"/cursos/0",
+					"courseChat":"true"
         },
         {
           "courseID":1,
@@ -44,7 +45,8 @@ export default class CursosList extends React.Component{
           "subscribed":true,
           "private":false,
           "coursePassword":"",
-          "courseLink":"/cursos/2"
+          "courseLink":"/cursos/2",
+					"courseChat":"true"
         },
         {
           "courseID":3,
@@ -75,7 +77,7 @@ export default class CursosList extends React.Component{
           "courseLink":"/cursos/4"
         }
     ];
-
+	
     return (
 	    <div className="row">
 	      <div className="col s10 offset-s1 ">
