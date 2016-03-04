@@ -1,3 +1,14 @@
+:global .react-tagsinput-tag {
+  display:inline-block;
+  font-size:16px;
+  color:white;
+  background-color: gray;
+
+  border-radius: 20px;
+  padding:8px;
+  margin:3px;
+}
+
 :local .header {
   display: flex;
   background: #333;

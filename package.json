@@ -21,7 +21,8 @@
     "marked": "0.3.5",
     "react": "0.14.3",
     "react-dom": "0.14.3",
-    "react-router": "1.0.0"
+    "react-router": "1.0.0",
+    "react-tagsinput": "^3.4.1"
   },
   "devDependencies": {
     "autoprefixer": "6.1.2",
