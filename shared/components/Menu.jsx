@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import styles from './Menu.css';
+
 
 export default class HelloWorld extends React.Component {
   constructor (props) {
@@ -8,25 +8,62 @@ export default class HelloWorld extends React.Component {
   }
   render () {
     return (
+    <nav>
       <div
-        className={ styles.header }
+        className={ "nav-wrapper teal darken-3" }
       >
-        <h1>My React Boilerplate</h1>
-        <ul
-          className={ styles.menu }
-        >
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/children">
-              Children
-            </Link>
-          </li>
-        </ul>
+
+      <a href="#" className="brand-logo">Logo</a>
+      <ul id="nav-mobile" className="right hide-on-med-and-down">
+
+        <li>
+            <input type="search" placeholder="Cursos">
+
+            </input>
+        </li>
+        <li>
+          <a href="#">
+                <i className="material-icons">search</i>
+          </a>
+        </li>
+
+        <li>
+          <a className="dropdown-button" href="#" data-activates='dropCategorias'  data-beloworigin="true">
+                Categorías
+          </a>
+        </li>
+
+        <li>
+
+        <a className="dropdown-button" href="#" data-activates='dropPerfil'  data-beloworigin="true">
+                <i className="material-icons" data-activates="'dropPerfil">perm_identity</i>
+          </a>
+
+        </li>
+      </ul>
+
+
+
+      <ul id='dropCategorias' className='dropdown-content' >
+        <li>
+          <Link to="#!">#categoria</Link>
+        </li>
+        <li>
+          <Link to="#!">#categoria</Link>
+        </li>
+      </ul>
+
+      <ul id='dropPerfil' className='dropdown-content'>
+        <li>
+          <Link to="#!">Mi Perfil</Link>
+        </li>
+        <li>
+          <Link to="#!">Salir</Link>
+        </li>
+      </ul>
+
       </div>
+    </nav>
     );
   }
 }
