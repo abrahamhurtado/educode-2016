@@ -13,7 +13,7 @@ export default class HelloWorld extends React.Component {
       >
 
 
-      <a href="/cursos" className="brand-logo">Logo</a>
+      <a href="/cursos" className="brand-logo"></a>
 
       <img className="logo" src="http://i.imgur.com/Zkt8es6.png"><a href="/" className="brand-logo"></a></img>
 

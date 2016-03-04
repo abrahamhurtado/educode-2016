@@ -27,15 +27,20 @@ export default class CursosItemList extends React.Component{
 								<h5>Instructor: {this.props.curso.courseInstructor}</h5>
 								<p>{this.props.curso.courseInfo}</p>
 								<p><br/><br/></p>
-								<p>{(this.props.curso.courseChat) ?
+								<p>{(this.props.curso.courseChat && this.props.curso.subscribed) ?
 									(
 										<div>
 											<span>	<a className="waves-effect waves-light btn" href="/videoStreaming">VideoChat disponible</a></span>
 										</div>
-									) : (!this.props.curso.courseChat) ?
+									) : (!this.props.curso.courseChat && this.props.curso.subscribed) ?
 									(
 										<div>
 											<span>	<a className="waves-effect waves-light btn" href="/chat">Chat disponible</a></span>
+										</div>
+									) : (!this.props.curso.subscribed) ?
+									(
+										<div>
+											<span>Suscribete para ver el chat</span>
 										</div>
 									) : (
 										<div>

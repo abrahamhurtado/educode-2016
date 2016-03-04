@@ -78,11 +78,13 @@ export default class CursosList extends React.Component{
           "courseLink":"/cursos/4"
         }
     ];
-	
+
     return (
+			<div>
 
     <div className="row">
       <div className="col s10 offset-s1 ">
+
       <h3> Mis cursos</h3>
       { cursos.filter(function (curso) {
           return curso.subscribed
@@ -95,7 +97,7 @@ export default class CursosList extends React.Component{
       }).map(function(curso, i){
         return <CursosItemList key={i} curso={curso}/>
       })}
-      
+      </div>
       </div>
       </div>
 
