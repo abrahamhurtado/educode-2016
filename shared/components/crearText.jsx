@@ -21,6 +21,8 @@ export default class CrearTexto extends React.Component {
   }
   render () {
     return (
+      <div className="row">
+      <form className="col s8 offset-s2">
       <div className="card">
         <div className="card-content">
           <h3>Ingresa la información del texto</h3>
@@ -37,6 +39,8 @@ export default class CrearTexto extends React.Component {
           <button className="waves-effect waves-light btn" type="submit">Guardar lección</button>
           <button className="btn-floating btn-large waves-effect waves-light red right"><i className="material-icons">add</i></button>
         </div>
+      </div>
+      </form>
       </div>
     )
   }
