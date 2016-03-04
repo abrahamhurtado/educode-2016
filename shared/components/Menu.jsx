@@ -57,6 +57,10 @@ export default class HelloWorld extends React.Component {
         <li>
           <Link to="/profile">Mi Perfil</Link>
         </li>
+
+        <li>
+          <Link to="/profile">Nuevo Curso</Link>
+        </li>
         <li>
           <Link to="#!">Salir</Link>
         </li>    
