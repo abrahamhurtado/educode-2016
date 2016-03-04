@@ -14,9 +14,7 @@ var TodoList = React.createClass({
 
                 </div>
             </form> 
-
     };
-    
     return <div className="row">
                   {this.props.items.map(createItem)}   
            </div>;
@@ -57,10 +55,12 @@ var TodoApp = React.createClass({
         <TodoList items={this.state.items} />
         <form onSubmit={this.handleSubmit} className="col s6 offset-s3">
            <div className="card" >
+              <div className="card-content">
                 <h3>{'Pregunta #' + (this.state.items.length + 1)}</h3>
           		<input onChange={this.onChange} value={this.state.quiz.text} />
           		<input onChange={this.enCambio} value={this.state.quiz.request} />
               <button className="btn-floating btn-large waves-effect waves-light red right"><i className="material-icons">add</i></button>
+           </div>
            </div>
         </form>
       </div>
