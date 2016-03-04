@@ -3,9 +3,7 @@ import { Link } from 'react-router';
 
 
 export default class HelloWorld extends React.Component {
-  constructor (props) {
-    super(props);
-  }
+
   render () {
     return (
     <nav>
@@ -70,4 +68,5 @@ export default class HelloWorld extends React.Component {
     </nav>
     );
   }
+
 }
