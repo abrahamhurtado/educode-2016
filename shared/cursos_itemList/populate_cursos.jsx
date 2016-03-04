@@ -1,6 +1,5 @@
 import React from 'react';
 import CursosItemList from './Cursos_itemList';
-
 export default class CursosList extends React.Component{
 	render () {
     var cursos = [
@@ -91,6 +90,7 @@ export default class CursosList extends React.Component{
       }).map(function(curso, i){
         return <CursosItemList key={i} curso={curso}/>
       })}
+      
       </div>
       </div>
 

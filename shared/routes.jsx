@@ -11,7 +11,9 @@ import NuevoCurso from './components/NuevoCurso.jsx';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
 import CrearQuiz from './components/crearQuiz.jsx';
-
+import Video from './components/Request.jsx';
+import Quiz from './components/Quiz.jsx';
+import FeedBack from './components/FeedBack.jsx';
 export default {
   path: '/',
   component: App,
@@ -25,6 +27,10 @@ export default {
     {path:'/new', component:NuevoCurso},
     { path: '/create/video', component: CrearVideo },
     { path: '/create/text', component: CrearTexto },
-    { path: '/create/quiz', component: CrearQuiz}
+    { path: '/create/quiz', component: CrearQuiz},
+    {path: '/cursos/quiz', component: Quiz},
+    {path: '/cursos/feedback', component: FeedBack},
+    {path: '/cursos/:id', component: Video}
+
   ]
 }

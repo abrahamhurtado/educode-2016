@@ -11,6 +11,7 @@ var alinearBoton = {
 export default class CursosItemList extends React.Component{
 
 	render () {
+		console.log(this.props)
     	return (
 				<div className="row">
 					<div className="">
