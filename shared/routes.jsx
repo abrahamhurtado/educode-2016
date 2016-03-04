@@ -3,12 +3,14 @@ import { Route } from 'react-router';
 import App from './containers/App';
 import Home from './components/Home';
 import Children from './components/Children';
+import Register from './components/Register'
 
 export default {
   path: '/',
   component: App,
   indexRoute: { component: Home },
   childRoutes: [
-    { path: '/children', component: Children }
+    { path: '/children', component: Children },
+    {path:'/register', component:Register}
   ]
 }
