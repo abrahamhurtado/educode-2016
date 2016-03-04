@@ -6,7 +6,6 @@ import Children from './components/Children';
 import cursoItem from './cursos_itemList/populate_cursos';
 import Profile from './components/profile';
 import Register from './components/Register';
-import Profile from './components/profile';
 import Create from './components/Create';
 import NuevoCurso from './components/NuevoCurso.jsx';
 import CrearVideo from './components/crearVideo.jsx';
