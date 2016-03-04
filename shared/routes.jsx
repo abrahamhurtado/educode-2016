@@ -9,6 +9,7 @@ import Profile from './components/profile';
 import Create from './components/Create';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
+import CrearQuiz from './components/crearQuiz.jsx';
 
 export default {
   path: '/',
@@ -21,6 +22,7 @@ export default {
     {path:'/profile', component:Profile},
     {path:'/create', component:Create},
     { path: '/create/video', component: CrearVideo },
-    { path: '/create/text', component: CrearTexto }
+    { path: '/create/text', component: CrearTexto },
+    { path: '/create/quiz', component: CrearQuiz}
   ]
 }
