@@ -4,11 +4,14 @@ import { Link } from 'react-router';
 var TodoList = React.createClass({
   render: function() {
     var createItem = function(item, index) {
-      return <form className="col s6 offset-s3">
+      return <form key={index} className="col s6 offset-s3">
                 <div className="card" >
-                  <p>Pregunta {item.id}</p>
+                 
+                  <label ><h4>Pregunta {item.id}</h4></label>
                   <p>{item.text}</p>
+                  <label><h4>Respuesta </h4></label>
                   <p>{item.request}</p>
+
                 </div>
             </form> 
 
@@ -42,6 +45,12 @@ var TodoApp = React.createClass({
     this.setState({items: nextItems, quiz: nextText});
 
   },
+  enCambio: function (e) {
+    var quiz = {
+      request: e.target.value
+    }
+    this.setState(quiz);
+  },
   render: function() {
     return (
       <div className="row" >
@@ -49,8 +58,9 @@ var TodoApp = React.createClass({
         <form onSubmit={this.handleSubmit} className="col s6 offset-s3">
            <div className="card" >
                 <h3>{'Pregunta #' + (this.state.items.length + 1)}</h3>
-          		<input  onChange={this.onChange} value={this.state.quiz.text} />
-          		<button className="btn-floating btn-large waves-effect waves-light red right"><i className="material-icons">add</i></button>
+          		<input onChange={this.onChange} value={this.state.quiz.text} />
+          		<input onChange={this.enCambio} value={this.state.quiz.request} />
+              <button className="btn-floating btn-large waves-effect waves-light red right"><i className="material-icons">add</i></button>
            </div>
         </form>
       </div>
