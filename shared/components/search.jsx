@@ -80,7 +80,7 @@ export default class Search extends React.Component {
           "courseInstructor":"Saúl García",
           "courseInfo":"Programación básica.",
           "liked":false,
-          "Category":["Matematicas"],
+          "Category":["Programación"],
           "courseLikes":500,
           "subscribed":false,
           "private":false,
@@ -92,7 +92,7 @@ export default class Search extends React.Component {
 
       <div className="row">
 	      <div className="col s10 offset-s1 ">
-        <h3>Resultados</h3>
+        <h3>Resultados - Matemáticas</h3>
         { cursos.sort(function(a, b) {
     return b.courseLikes - a.courseLikes}).filter(function (curso) {
             return curso.Category.indexOf("Matematicas") !=-1 && !curso.subscribed
