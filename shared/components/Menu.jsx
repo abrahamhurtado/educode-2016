@@ -15,10 +15,10 @@ export default class HelloWorld extends React.Component {
 
       <a href="/" className="brand-logo">Logo</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
-        
-        <li>          
+
+        <li>
             <input type="search" placeholder="Cursos">
-             
+
             </input>
         </li>
         <li>
@@ -50,19 +50,23 @@ export default class HelloWorld extends React.Component {
         </li>
         <li>
           <Link to="#!">#categoria</Link>
-        </li>    
+        </li>
       </ul>
 
       <ul id='dropPerfil' className='dropdown-content'>
         <li>
           <Link to="/profile">Mi Perfil</Link>
         </li>
+
+        <li>
+          <Link to="/profile">Nuevo Curso</Link>
+        </li>
         <li>
           <Link to="/new"> + Curso</Link>
         </li>
         <li>
           <Link to="#!">Salir</Link>
-        </li>    
+        </li>
       </ul>
 
       </div>
