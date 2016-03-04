@@ -10,6 +10,7 @@ import Create from './components/Create';
 import NuevoCurso from './components/NuevoCurso.jsx';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
+import CrearQuiz from './components/crearQuiz.jsx';
 
 export default {
   path: '/',
@@ -23,6 +24,7 @@ export default {
     {path:'/create', component:Create},
     {path:'/new', component:NuevoCurso},
     { path: '/create/video', component: CrearVideo },
-    { path: '/create/text', component: CrearTexto }
+    { path: '/create/text', component: CrearTexto },
+    { path: '/create/quiz', component: CrearQuiz}
   ]
 }
