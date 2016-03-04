@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import styles from './Menu.css';
 
 
 export default class HelloWorld extends React.Component {
@@ -13,7 +14,7 @@ export default class HelloWorld extends React.Component {
         className={ "nav-wrapper teal darken-3" }
       >
 
-      <a href="/" className="brand-logo">Logo</a>
+      <img className="logo" src="http://i.imgur.com/Zkt8es6.png"><a href="/" className="brand-logo"></a></img>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
 
         <li>
