@@ -1,5 +1,6 @@
 import React from 'react';
 import marked from 'marked';
+import styles from './Menu.css';
 
 export default class CrearTexto extends React.Component {
   constructor () {
@@ -7,7 +8,7 @@ export default class CrearTexto extends React.Component {
     this.rawMarkup = this.rawMarkup.bind(this);
     this.updateCode = this.updateCode.bind(this);
     this.state = {
-      text: '# Aquí va el título de la lección'
+      text: '#### Aquí va el título de la lección'
     }
   }
   updateCode (e) {
@@ -22,26 +23,37 @@ export default class CrearTexto extends React.Component {
   render () {
     return (
       <div className="row">
-      <form className="col s8 offset-s2">
-      <div className="card">
-        <div className="card-content">
+      <form>
+      <div className="col s8 offset-s4">
           <h3>Ingresa la información del texto</h3>
-          <div className="input-field">
+          <div className="input-field col s6">
             <label>Texto de la lección n</label>
             <textarea ref="textarea" className="materialize-textarea" required name="descripcion" value={this.state.text} onChange={this.updateCode}/>
           </div>
-          <a href="https://guides.github.com/features/mastering-markdown/">Referencia de markdown</a>
-          <h4>Previo de la lección</h4>
+      </div>
+
+      <div className="col s8 offset-s4">
+        <div className="col s6">
+          <label>Previo de la lección &nbsp;<a href="http://i.imgur.com/8FrVbI6.png" target="_blank"> Ayuda con formato</a></label>
           <div
             dangerouslySetInnerHTML={this.rawMarkup()}
           >
-          </div>
-          <button className="waves-effect waves-light btn" type="submit">Guardar lección</button>
-          <button className="btn-floating btn-large waves-effect waves-light red right"><i className="material-icons">add</i></button>
+          </div>          
         </div>
       </div>
-      </form>
+
+      <div className="row">
       </div>
+      <div className="col s8 offset-s4">
+        <div className="col s6 ">
+            <button className="waves-effect waves-light btn" type="submit">Guardar lección</button>
+            <button className="btn-floating btn-medium waves-effect waves-light red right"><i className="material-icons">add</i></button>
+        </div>
+      </div>
+    
+      </form>
+     </div>
+        
     )
   }
 }

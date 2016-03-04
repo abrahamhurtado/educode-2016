@@ -1,5 +1,7 @@
 import React from 'react';
-import CursosItemList from './Cursos_itemList';
+import CursosItemList from './cursos_itemList';
+
+
 export default class CursosList extends React.Component{
 	render () {
     var cursos = [
@@ -76,6 +78,7 @@ export default class CursosList extends React.Component{
     ];
 
     return (
+
     <div className="row">
       <div className="col s10 offset-s1 ">
       <h3> Mis cursos</h3>

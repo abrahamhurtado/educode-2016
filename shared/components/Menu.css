@@ -9,6 +9,12 @@
   margin:3px;
 }
 
+.help {
+
+  font-size: 90px;
+
+}
+
 :local .header {
   display: flex;
   background: #333;
