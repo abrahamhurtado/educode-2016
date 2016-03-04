@@ -13,7 +13,7 @@ export default class HelloWorld extends React.Component {
         className={ "nav-wrapper teal darken-3" }
       >
 
-      <a href="#" className="brand-logo">Logo</a>
+      <a href="/" className="brand-logo">Logo</a>
       <ul id="nav-mobile" className="right hide-on-med-and-down">
 
         <li>
@@ -55,7 +55,11 @@ export default class HelloWorld extends React.Component {
 
       <ul id='dropPerfil' className='dropdown-content'>
         <li>
-          <Link to="#!">Mi Perfil</Link>
+          <Link to="/profile">Mi Perfil</Link>
+        </li>
+
+        <li>
+          <Link to="/profile">Nuevo Curso</Link>
         </li>
         <li>
           <Link to="#!">Salir</Link>
