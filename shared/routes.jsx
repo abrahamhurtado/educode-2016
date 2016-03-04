@@ -6,10 +6,13 @@ import Children from './components/Children';
 import cursoItem from './cursos_itemList/populate_cursos';
 import Profile from './components/profile';
 import Register from './components/Register';
+import Profile from './components/profile';
 import Create from './components/Create';
+import NuevoCurso from './components/NuevoCurso.jsx';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
 import Search from './components/search.jsx'
+import CrearQuiz from './components/crearQuiz.jsx';
 
 export default {
   path: '/',
@@ -22,7 +25,9 @@ export default {
     {path:'/profile', component:Profile},
     {path:'/create', component:Create},
     {path:'/busqueda', component:Search},
+    {path:'/new', component:NuevoCurso},
     { path: '/create/video', component: CrearVideo },
-    { path: '/create/text', component: CrearTexto }
+    { path: '/create/text', component: CrearTexto },
+    { path: '/create/quiz', component: CrearQuiz}
   ]
 }
