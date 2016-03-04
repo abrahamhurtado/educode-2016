@@ -17,7 +17,8 @@ export default class CursosList extends React.Component{
           "subscribed":true,
           "private":false,
           "coursePassword":"",
-          "courseLink":"/cursos/0"
+          "courseLink":"/cursos/0",
+					"courseChat":"true"
         },
         {
           "courseID":1,
@@ -45,7 +46,8 @@ export default class CursosList extends React.Component{
           "subscribed":true,
           "private":false,
           "coursePassword":"",
-          "courseLink":"/cursos/2"
+          "courseLink":"/cursos/2",
+					"courseChat":"true"
         },
         {
           "courseID":3,
@@ -78,9 +80,11 @@ export default class CursosList extends React.Component{
     ];
 
     return (
+			<div>
 
     <div className="row">
       <div className="col s10 offset-s1 ">
+
       <h3> Mis cursos</h3>
       { cursos.filter(function (curso) {
           return curso.subscribed
@@ -93,7 +97,7 @@ export default class CursosList extends React.Component{
       }).map(function(curso, i){
         return <CursosItemList key={i} curso={curso}/>
       })}
-      
+      </div>
       </div>
       </div>
 
