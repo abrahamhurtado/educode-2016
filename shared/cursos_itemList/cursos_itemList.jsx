@@ -17,29 +17,7 @@ var CircleBg={
 export default class CursosItemList extends React.Component{
 
 	render () {
-		var user = [
-	    {
-	      "userID": 0,
-	      "userType":"Tutor",
-	      "TutorName":"Saúl García",
-	      "Online":true
-	    },{
-	      "userID": 1,
-	      "userType":"Student",
-	      "TutorName":"Anaid Ramirez",
-	      "Online":true
-	    },{
-	      "userID": 2,
-	      "userType":"Tutor",
-	      "TutorName":"Abraham Hurtado",
-	      "Online":false
-	    },{
-	      "userID": 3,
-	      "userType":"Tutor",
-	      "TutorName":"Ramón Ramírez",
-	      "Online":false
-	    }
-	  ];
+
     	return (
 				<div className="row">
 					<div className="">

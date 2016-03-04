@@ -9,6 +9,13 @@
   margin:3px;
 }
 
+:global .logo{
+
+  width:10%;
+  margin:2px;
+
+}
+
 .help {
 
   font-size: 90px;

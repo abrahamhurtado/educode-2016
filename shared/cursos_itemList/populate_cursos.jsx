@@ -1,6 +1,7 @@
 import React from 'react';
 import CursosItemList from './cursos_itemList';
 
+
 export default class CursosList extends React.Component{
 	render () {
     var cursos = [
@@ -79,22 +80,26 @@ export default class CursosList extends React.Component{
     ];
 	
     return (
-	    <div className="row">
-	      <div className="col s10 offset-s1 ">
-	      <h3> Mis cursos</h3>
-	      { cursos.filter(function (curso) {
-	          return curso.subscribed
-	      }).map(function(curso, i){
-	        return <CursosItemList key={i} curso={curso}/>
-	      })}
-	      <h3> Cursos recomendados</h3>
-	      { cursos.filter(function (curso) {
-	        return (!curso.subscribed && !curso.private)
-	      }).map(function(curso, i){
-	        return <CursosItemList key={i} curso={curso}/>
-	      })}
-	      </div>
-	    </div>
-	  )
-  }
+
+    <div className="row">
+      <div className="col s10 offset-s1 ">
+      <h3> Mis cursos</h3>
+      { cursos.filter(function (curso) {
+          return curso.subscribed
+      }).map(function(curso, i){
+        return <CursosItemList key={i} curso={curso}/>
+      })}
+      <h3> Cursos recomendados</h3>
+      { cursos.filter(function (curso) {
+        return (!curso.subscribed && !curso.private)
+      }).map(function(curso, i){
+        return <CursosItemList key={i} curso={curso}/>
+      })}
+      
+      </div>
+      </div>
+
+
+    )
+  	}
 }
