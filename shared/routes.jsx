@@ -4,10 +4,8 @@ import App from './containers/App';
 import Home from './components/Home';
 import Children from './components/Children';
 import cursoItem from './cursos_itemList/populate_cursos';
-import Register from './components/Register'
-import Register from './components/Register',
-import Profile from './components/profile',
 import Register from './components/Register';
+import Profile from './components/profile';
 import Create from './components/Create';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
