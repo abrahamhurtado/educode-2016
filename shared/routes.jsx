@@ -11,6 +11,8 @@ import NuevoCurso from './components/NuevoCurso.jsx';
 import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
 import CrearQuiz from './components/crearQuiz.jsx';
+import VideoStreaming from './components/VideoStreaming';
+import VerVideoStreaming from './components/verVideoStreaming';
 
 export default {
   path: '/',
@@ -22,6 +24,8 @@ export default {
     {path:'/register', component:Register},
     {path:'/profile', component:Profile},
     {path:'/create', component:Create},
+    { path: '/videoStreaming', component: VideoStreaming},
+    { path: '/stream', component: VerVideoStreaming },
     {path:'/new', component:NuevoCurso},
     { path: '/create/video', component: CrearVideo },
     { path: '/create/text', component: CrearTexto },
