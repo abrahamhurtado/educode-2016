@@ -1,4 +1,6 @@
 import express from 'express';
+import http from 'http';
+import io from 'socket.io';
 
 // middlewares
 import reactRouterMiddleware from './server/middleware/reactRouter';
@@ -29,4 +31,13 @@ app.use('/static', express.static('./build'));
 app.use(serverRoute);
 app.use(reactRouterMiddleware());
 
-app.listen(3000, () => console.log('Go to localhost:3000'));
+var server = http.Server(app);
+var socketServer = io(server);
+
+server.listen(3000, () => console.log('Go to localhost:3000'));
+
+socketServer.on('connection', function (socket) {
+  socket.on('newFrame', function (img) {
+    socket.emit('setFrame', img);
+  })
+});

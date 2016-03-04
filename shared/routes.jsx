@@ -12,9 +12,12 @@ import CrearVideo from './components/crearVideo.jsx';
 import CrearTexto from './components/crearText.jsx';
 import Search from './components/search.jsx'
 import CrearQuiz from './components/crearQuiz.jsx';
+import VideoStreaming from './components/VideoStreaming';
+import VerVideoStreaming from './components/verVideoStreaming';
 import Video from './components/Request.jsx';
 import Quiz from './components/Quiz.jsx';
 import FeedBack from './components/FeedBack.jsx';
+
 export default {
   path: '/',
   component: App,
@@ -25,6 +28,8 @@ export default {
     {path:'/register', component:Register},
     {path:'/profile', component:Profile},
     {path:'/create', component:Create},
+    { path: '/videoStreaming', component: VideoStreaming},
+    { path: '/stream', component: VerVideoStreaming },
     {path:'/busqueda', component:Search},
     {path:'/new', component:NuevoCurso},
     { path: '/create/video', component: CrearVideo },
