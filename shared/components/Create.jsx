@@ -28,7 +28,7 @@ export default class Register extends React.Component {
            <div className="row" style={styles.centerText}>
            <form className="col s6 offset-s3">
                 <div className="card" >
-               		<Link to="/create/text"><i className="material-icons" style={styles.materialIconsHack.video}>video_library</i></Link>
+               		<Link to="/create/video"><i className="material-icons" style={styles.materialIconsHack.video}>video_library</i></Link>
                     
     				<div className="card-content">
       					<p><Link to="/create/video">video</Link></p>
@@ -42,9 +42,9 @@ export default class Register extends React.Component {
    					 </div>
                 </div>
                 <div className="card">
-                    <Link to="/create/text"><i className="material-icons" style={styles.materialIconsHack.quiz}>spellcheck</i></Link>
+                    <Link to="/create/quiz"><i className="material-icons" style={styles.materialIconsHack.quiz}>spellcheck</i></Link>
     				<div className="card-content">
-      					<p><a href="#">Quiz</a></p>
+      					<p><Link to="/create/quiz">Examen</Link></p>
    					 </div>
                 </div>
                 </form>
